@@ -160,7 +160,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const film = styled(Link)`
+export const Film = styled(Link)`
   display: flex;
   position: relative;
   width: 22vw;
