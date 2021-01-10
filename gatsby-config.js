@@ -40,7 +40,7 @@ module.exports = {
       options: {
       typeName: "WPGraphql",
       fieldName: "wpcontent",
-      url: "http://the-world-of-film.local//graphql", // de link naar de route van je website
+      url: "http://the-world-of-film.local/graphql", // de link naar de route van je website
       },
       },
       {
