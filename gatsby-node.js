@@ -7,7 +7,7 @@ const path = require("path")
 //   return graphql(`
 //     {
 //       wpcontent {
-//         artists {
+//         films {
 //           edges {
 //             node {
 //               slug
@@ -23,12 +23,12 @@ const path = require("path")
 //       return Promise.reject(result.errors)
 //     }
 
-//     const artists = result.data.wpcontent.artists.edges
-//     artists.forEach(artist => {
-//       const { id, slug } = artist.node
+//     const films = result.data.wpcontent.films.edges
+//     films.forEach(film => {
+//       const { id, slug } = film.node
 //       createPage({
 //         path: slug,
-//         component: path.resolve(`src/templates/artist.js`),
+//         component: path.resolve(`src/templates/film.js`),
 //         context: {
 //           id,
 //           slug,

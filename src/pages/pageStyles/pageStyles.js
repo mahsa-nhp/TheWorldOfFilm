@@ -48,8 +48,8 @@ export const Wrapper = styled.div`
         color: white;
         text-transform: uppercase;
         margin: auto;
-        border-bottom: solid 5px white;
-        margin-bottom: 1rem;
+        ${'' /* border-bottom: solid 5px white; */}
+        ${'' /* margin-bottom: 1rem; */}
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1.5rem;
@@ -203,7 +203,7 @@ export const Film = styled(Link)`
 
     p {
       text-transform: uppercase;
-      font-size: 1.3rem;
+      font-size: 1 rem;
       font-weight: 600;
       color: white;
       margin: 0;

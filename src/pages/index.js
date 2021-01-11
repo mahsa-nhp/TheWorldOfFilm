@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 // als ik de style van main wil veranderen ga ik dit gevruiken
 import {Wrapper, Image, BottomEdgeDown, BottomEdgeUp, Film} from './pageStyles/pageStyles'
-import {COLORS} from '../constants'
+// import {COLORS} from '../constants'
 
 const IndexPage = () => {
   const {
@@ -42,7 +42,7 @@ const IndexPage = () => {
             ... on WPGraphql_Film {
               id
               film {
-                castAndCrew
+                rating
                 name
                 picture {
                   altText
@@ -94,6 +94,7 @@ const IndexPage = () => {
             altText={film.picture.altText}/>
             <div className="film-info">
               <p>{film.name}</p>
+              <p>{film.rating}</p>
             </div>
           </Film>
         ))}

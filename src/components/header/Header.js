@@ -47,12 +47,13 @@ const Header = ({ siteTitle }) => {
  ) 
 }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+//! check shavad!
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header
