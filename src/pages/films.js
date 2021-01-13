@@ -78,7 +78,7 @@ const FilmsPage = () => {
           {/* <BottomEdgeUp color={COLORS.BLACK}/> */}
         </div>
         <div className="films">
-          <h>Our Films</h>
+          <h2>Our Films</h2>
           <div className="film-items">
             {films.map(({node: {film, slug}}) => (
               <Film to={`/${slug}`} key={slug}>

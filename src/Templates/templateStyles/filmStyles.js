@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
         border-bottom: solid 15px ${COLORS.PRIMARY};
       }
 
-      .roles {
+      .genres {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -46,7 +46,7 @@ export const Wrapper = styled.div`
           border-right: solid 5px ${COLORS.PRIMARY};
         }
 
-        .role {
+        .genre {
           padding: 1rem 1.5rem;
         }
       }
@@ -66,9 +66,9 @@ export const Wrapper = styled.div`
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         font-size: 4rem;
-        border-bottom: ${COLORS.WHITE} solid 6px;
+        ${'' /* border-bottom: black solid 6px; */}
         padding-bottom: 1rem;
-        margin-left: auto;
+        ${'' /* margin-left: auto; */}
         margin-bottom: 0.5rem;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
@@ -83,14 +83,14 @@ export const Wrapper = styled.div`
         color: ${COLORS.SECONDARY};
         font-size: 1.8rem;
         text-transform: uppercase;
-        margin-left: auto;
-        margin-bottom: auto;
+        ${'' /* margin-left: auto;
+        margin-bottom: auto; */}
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1.3rem;
-          margin-right: auto;
-          margin-left: 0;
-          margin-bottom: 1rem;
+          ${'' /* margin-right: auto; */}
+          ${'' /* margin-left: 0; */}
+          ${'' /* margin-bottom: 1rem; */}
         }
 
         span:first-child {
@@ -110,11 +110,12 @@ export const Wrapper = styled.div`
       .info {
         font-family: 2rem;
         text-transform: uppercase;
+        color: ${COLORS.TERTIARY};
       }
     }
   }
 
-  .film-pictures {
+  ${'' /* .film-pictures {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -122,7 +123,7 @@ export const Wrapper = styled.div`
 
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
-    }
+    } */}
 
     .film-picture {
       width: 28.5vw;
