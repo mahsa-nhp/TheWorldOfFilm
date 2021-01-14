@@ -1,10 +1,10 @@
 import React from "react"
-import {Link, useStaticQuery, graphql} from 'gatsby'
+import {useStaticQuery, graphql} from 'gatsby'
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 // als ik de style van main wil veranderen ga ik dit gevruiken
-import {Wrapper, Image, BottomEdgeDown, BottomEdgeUp, Film} from './pageStyles/pageStyles'
+import {Wrapper, Image, Film} from './pageStyles/pageStyles'
 // import {COLORS} from '../constants'
 
 const IndexPage = () => {
@@ -89,7 +89,7 @@ const IndexPage = () => {
       <h2>Featured Films</h2>
       <div className="film-items">
         {homePageFeaturedFilms.map(({film, slug}) => (
-          <Film key={slug} to={`/${slug}`}>
+          <Film to={`/${slug}`} key={slug}>
             <Image fluid={film.picture.imageFile.childImageSharp.fluid} 
             altText={film.picture.altText}/>
             <div className="film-info">

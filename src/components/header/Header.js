@@ -14,7 +14,6 @@ const Header = ({ siteTitle }) => {
     },
   } = useStaticQuery(graphql`
   query {
-    
     logo: file(relativePath: { eq: "logo.PNG" }) {
       childImageSharp {
         fixed(quality: 100, width: 220) {
@@ -22,7 +21,6 @@ const Header = ({ siteTitle }) => {
         }
       }
     }
-    
     wpcontent {
       menuItems {
         edges {
@@ -48,12 +46,12 @@ const Header = ({ siteTitle }) => {
 }
 
 //! check shavad!
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
 
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
+Header.defaultProps = {
+  siteTitle: ``,
+}
 
 export default Header
