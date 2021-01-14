@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
+import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../constants"
 
 export const Wrapper = styled.div`
   .banner {
@@ -48,8 +48,6 @@ export const Wrapper = styled.div`
         color: white;
         text-transform: uppercase;
         margin: auto;
-        ${'' /* border-bottom: solid 5px white; */}
-        ${'' /* margin-bottom: 1rem; */}
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1.5rem;
@@ -70,7 +68,7 @@ export const Wrapper = styled.div`
     h2 {
       font-family: ${FONT_FAMILIES.TITLE};
       font-size: 3rem;
-      color: white;
+      color: orange;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 3rem;

@@ -34,7 +34,6 @@ const Header = ({ siteTitle }) => {
   }
   `)
 
-  //console.log(menuItems, 'menu items')
  return (
     <HeaderWrapper>
     <Link to="/">
@@ -45,7 +44,6 @@ const Header = ({ siteTitle }) => {
  ) 
 }
 
-//! check shavad!
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }

@@ -4,7 +4,7 @@ import {useStaticQuery, graphql} from 'gatsby'
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 // als ik de style van main wil veranderen ga ik dit gevruiken
-import {Wrapper, Image, Film} from './pageStyles/pageStyles'
+import {Wrapper, Image, Film} from './../pageStyles/pageStyles'
 // import {COLORS} from '../constants'
 
 const IndexPage = () => {
@@ -40,7 +40,7 @@ const IndexPage = () => {
           }
           homePageFeaturedFilms {
             ... on WPGraphql_Film {
-              id
+              slug
               film {
                 rating
                 name

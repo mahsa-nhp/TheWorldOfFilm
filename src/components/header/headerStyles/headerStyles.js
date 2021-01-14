@@ -2,7 +2,6 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../../constants"
 
-//! style veranderen!
 export const HeaderWrapper = styled.header`
   display: flex;
   position: fixed;
@@ -62,7 +61,6 @@ export const MenuList = styled.ul`
     color: ${COLORS.TERTIARY};
   }
 `
-//### mobile navigatie ###########################################
 export const HamburgerButton = styled.div`
   display: block;
   position: fixed;
