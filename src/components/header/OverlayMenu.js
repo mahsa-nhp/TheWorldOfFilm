@@ -29,7 +29,6 @@ const OverlayMenu = ({ handleOverlayMenu, menuOpen }) => {
   `)
 
   return (
-    //   lege tag => parent => anders error
     <>
       {menuOpen && (
         <OverlayWrapper>

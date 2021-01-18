@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
-import { Wrapper, Image, BottomEdgeDown, Film } from './../pageStyles/pageStyles'
+import { Wrapper, Image, Film } from './../pageStyles/pageStyles'
 import {COLORS} from '../constants'
 
 const FilmsPage = () => {
@@ -48,7 +48,7 @@ const FilmsPage = () => {
                     sourceUrl
                     imageFile{
                       childImageSharp {
-                        fluid(quality: 100, grayscale: true) {
+                        fluid(quality: 50, grayscale: true) {
                           ...GatsbyImageSharpFluid_withWebp
                         }
                       }
@@ -62,7 +62,7 @@ const FilmsPage = () => {
         }
       }
     `)
-  // console.log(data)
+    
   return (
     <Layout>
       <SEO title="Films"/>
@@ -70,12 +70,10 @@ const FilmsPage = () => {
         <div className="banner">
           <Image fluid={filmsPageHeaderPicture.imageFile.childImageSharp.fluid}
                  altText={filmsPageHeaderPicture.altText} />
-          <BottomEdgeDown color={COLORS.SECONDARY}/>
         </div>
         <div className="description">
-          <h2>write a title</h2>
+          <h2>our website</h2>
           <p>{filmsPageDescription}</p>
-          {/* <BottomEdgeUp color={COLORS.BLACK}/> */}
         </div>
         <div className="films">
           <h2>Our Films</h2>

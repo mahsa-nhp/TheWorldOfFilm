@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import { Wrapper, Image } from "./templateStyles/filmStyles"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
+import { Wrapper, Image } from './templateStyles/filmStyles'
 
 const FilmTemplate = ({
   data: {
@@ -42,7 +42,10 @@ const FilmTemplate = ({
                 <b>Rating:</b> {film.rating}
               </p>
               <p className="info">
-                <b>Cast And Crew:</b> {film.castAndCrew}
+                <b>Writer:</b> {film.writer}
+              </p>
+              <p className="info">
+                <b>Main Stars:</b> {film.mainStars}
               </p>
               <p className="info">
                 <b>Awards:</b> {film.award}
@@ -76,7 +79,8 @@ export const pageQuery = graphql`
                 }
                 film {
                   award
-                  castAndCrew
+                  writer
+                  mainStars
                   country
                   description
                   director
@@ -86,7 +90,7 @@ export const pageQuery = graphql`
                     sourceUrl
                     imageFile {
                       childImageSharp {
-                        fluid(quality: 75) {
+                        fluid(quality: 50) {
                           ...GatsbyImageSharpFluid_withWebp
                         }
                       }

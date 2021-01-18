@@ -1,11 +1,9 @@
-import React from "react"
+import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-// als ik de style van main wil veranderen ga ik dit gevruiken
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 import {Wrapper, Image, Film} from './../pageStyles/pageStyles'
-// import {COLORS} from '../constants'
 
 const IndexPage = () => {
   const {
@@ -49,7 +47,7 @@ const IndexPage = () => {
                   sourceUrl
                   imageFile{
                     childImageSharp {
-                      fluid(quality: 100, grayscale: true) {
+                      fluid(quality: 50, grayscale: true) {
                         ...GatsbyImageSharpFluid_withWebp
                       }
                     }
@@ -64,8 +62,6 @@ const IndexPage = () => {
   }
   `)
 
-  // console.log(data);
-  // console.log(homePageFeaturedFilms)
   return(
     <Layout>
     <SEO title="Home" />
@@ -78,12 +74,10 @@ const IndexPage = () => {
           <div className="inner-div">
             <p className="header-title">{homePageHeaderTitle}</p>
           </div>
-          {/* voor de schuine lijn in het midden */}
-          {/* <BottomEdgeDown color={COLORS.BLACK}/> */}
     </div>
     <div className="description">
+    <h2>About Films</h2>
       <p>{homePageDescription}</p>
-      {/* <BottomEdgeUp color={COLORS.PRIMARY}/> */}
     </div>
     <div className="films">
       <h2>Featured Films</h2>

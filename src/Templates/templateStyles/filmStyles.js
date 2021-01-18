@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
+// import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
+import { COLORS, MEDIA_QUERIES } from "../../constants"
 
 export const Wrapper = styled.div`
   background-color: ${COLORS.BLACK};
@@ -18,8 +19,7 @@ export const Wrapper = styled.div`
 
     .film-image {
       position: relative;
-      width: 40vw;
-      height: 40vw;
+      width: 20vw;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         height: 90vw;
@@ -36,10 +36,10 @@ export const Wrapper = styled.div`
         justify-content: space-evenly;
         flex-wrap: wrap;
         color: ${COLORS.SECONDARY};
-        font-family: ${FONT_FAMILIES.TITLE};
+        ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
         text-transform: uppercase;
         background-color: ${COLORS.GREY};
-        border-right: solid 15px ${COLORS.SECONDARY};
+        border-right: solid 8px ${COLORS.SECONDARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           color: ${COLORS.PRIMARY};
@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
         }
 
         .genre {
-          padding: 1rem 1.5rem;
+          padding: 0.3rem 1.5rem;
         }
       }
     }
@@ -63,12 +63,10 @@ export const Wrapper = styled.div`
       }
 
       h2 {
-        font-family: ${FONT_FAMILIES.TITLE};
+        ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
         text-transform: uppercase;
-        font-size: 4rem;
-        ${'' /* border-bottom: black solid 6px; */}
+        font-size: 3rem;
         padding-bottom: 1rem;
-        ${'' /* margin-left: auto; */}
         margin-bottom: 0.5rem;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
@@ -79,18 +77,13 @@ export const Wrapper = styled.div`
       }
 
       h3 {
-        font-family: ${FONT_FAMILIES.TITLE};
-        color: ${COLORS.SECONDARY};
+        ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
+        color: white;
         font-size: 1.8rem;
         text-transform: uppercase;
-        ${'' /* margin-left: auto;
-        margin-bottom: auto; */}
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1.3rem;
-          ${'' /* margin-right: auto; */}
-          ${'' /* margin-left: 0; */}
-          ${'' /* margin-bottom: 1rem; */}
         }
 
         span:first-child {
@@ -99,8 +92,8 @@ export const Wrapper = styled.div`
       }
 
       .description {
-        font-size: 1.2rem;
-        color: ${COLORS.TERTIARY};
+        font-size: 1rem;
+        color: #DAF7A6 ;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1rem;
@@ -109,21 +102,10 @@ export const Wrapper = styled.div`
 
       .info {
         font-family: 2rem;
-        text-transform: uppercase;
-        color: ${COLORS.TERTIARY};
+        color: #FFC300;
       }
     }
   }
-
-  ${'' /* .film-pictures {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 2rem;
-
-    @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-      flex-direction: column;
-    } */}
 
     .film-picture {
       width: 28.5vw;

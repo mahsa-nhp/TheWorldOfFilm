@@ -44,14 +44,14 @@ module.exports = {
       url: "http://the-world-of-film.local/graphql", // de link naar de route van je website
       },
       },
-      {
-        // Gatsby Plugin Google Fonts
-        resolve: `gatsby-plugin-google-fonts`,
-        options: {      
-        fonts: [`Roboto`, `Oswald`],      
-        display: "swap",        
-        },        
-        },
+      // {
+      //   // Gatsby Plugin Google Fonts
+      //   resolve: `gatsby-plugin-google-fonts`,
+      //   options: {      
+      //   fonts: [`Roboto`, `Oswald`],      
+      //   display: "swap",        
+      //   },        
+      //   },
         "gatsby-plugin-styled-components",
 
     // this (optional) plugin enables Progressive Web App + Offline functionality

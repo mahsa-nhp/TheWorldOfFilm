@@ -74,16 +74,3 @@ exports.createResolvers = async ({
     },
   })
 }
-
-// React-hot-loader: react-🔥-dom patch is not detected
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
-  if (stage.startsWith("develop")) {
-    actions.setWebpackConfig({
-      resolve: {
-        alias: {
-          "react-dom": "@hot-loader/react-dom",
-        },
-      },
-    })
-  }
-}

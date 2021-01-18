@@ -1,6 +1,7 @@
 import Img from "gatsby-image"
 import styled from "styled-components"
-import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../../constants"
+// import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../../constants"
+import { COLORS, MEDIA_QUERIES } from "../../../constants"
 
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -45,7 +46,7 @@ export const MenuList = styled.ul`
     a {
       color: ${COLORS.WHITE};
       font-size: 1.2rem;
-      font-family: ${FONT_FAMILIES.BUTTON};
+      ${'' /* font-family: ${FONT_FAMILIES.BUTTON}; */}
       text-transform: uppercase;
       white-space: nowrap;
       text-decoration: none;

@@ -3,7 +3,6 @@ import {Link} from 'gatsby'
 import {MenuList} from './headerStyles/headerStyles'
 
 const Menu = ({ menuItems }) => {
-    // console.log(menuItems);
     return (
       <MenuList>
         {menuItems.map(({ node: item }, i) => (
