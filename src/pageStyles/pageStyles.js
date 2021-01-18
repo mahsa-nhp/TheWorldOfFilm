@@ -1,8 +1,7 @@
-import styled from "styled-components"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
-// import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../constants"
-import { COLORS, MEDIA_QUERIES } from "../constants"
+import styled from 'styled-components'
+import Img from 'gatsby-image'
+import { Link } from 'gatsby'
+import { COLORS, MEDIA_QUERIES } from '../constants'
 
 export const Wrapper = styled.div`
   .banner {
@@ -43,7 +42,6 @@ export const Wrapper = styled.div`
       }
 
       .header-title {
-        ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
         font-size: 3rem;
         font-weight: 600;
         color: white;
@@ -67,7 +65,6 @@ export const Wrapper = styled.div`
       `${descriptionColor}`};
 
     h2 {
-      ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
       font-size: 3rem;
       color: #9FDEFD; 
       text-transform: uppercase;
@@ -105,7 +102,6 @@ export const Wrapper = styled.div`
       `${filmsColor}`};
 
     h2 {
-      ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
       font-size: 3rem;
       color: #155780;
       text-transform: uppercase;
@@ -133,7 +129,6 @@ export const Film = styled(Link)`
   position: relative;
   width: 20vw;
   height: 29vw;
-  ${'' /* margin: 2vw; */}
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 

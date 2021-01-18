@@ -1,7 +1,6 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  /* font: Roboto, serif, sans-serif; */
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
@@ -13,7 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  /* font-family: Roboto, serif; */
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;

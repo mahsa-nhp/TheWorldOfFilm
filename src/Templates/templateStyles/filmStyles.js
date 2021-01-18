@@ -1,7 +1,6 @@
-import styled from "styled-components"
-import Img from "gatsby-image"
-// import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
-import { COLORS, MEDIA_QUERIES } from "../../constants"
+import styled from 'styled-components'
+import Img from 'gatsby-image'
+import { COLORS, MEDIA_QUERIES } from '../../constants'
 
 export const Wrapper = styled.div`
   background-color: ${COLORS.BLACK};
@@ -36,7 +35,6 @@ export const Wrapper = styled.div`
         justify-content: space-evenly;
         flex-wrap: wrap;
         color: ${COLORS.SECONDARY};
-        ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
         text-transform: uppercase;
         background-color: ${COLORS.GREY};
         border-right: solid 8px ${COLORS.SECONDARY};
@@ -63,7 +61,6 @@ export const Wrapper = styled.div`
       }
 
       h2 {
-        ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
         text-transform: uppercase;
         font-size: 3rem;
         padding-bottom: 1rem;
@@ -77,7 +74,6 @@ export const Wrapper = styled.div`
       }
 
       h3 {
-        ${'' /* font-family: ${FONT_FAMILIES.TITLE}; */}
         color: white;
         font-size: 1.8rem;
         text-transform: uppercase;
